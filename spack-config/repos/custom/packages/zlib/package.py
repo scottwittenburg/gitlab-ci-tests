@@ -42,7 +42,7 @@ class Zlib(Package):
             env.append_flags('CFLAGS', self.compiler.cc_pic_flag)
         if '+optimize' in self.spec:
             env.append_flags('CFLAGS', '-O2')
-        if '+notlikely' in self.spec:
+        if '+notpossible' in self.spec:
             env.append_flags('CFLAGS', '-Wall')
 
     def install(self, spec, prefix):
