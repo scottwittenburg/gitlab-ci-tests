@@ -51,9 +51,6 @@ class Ncurses(AutotoolsPackage, GNUMirrorPackage):
             if '-ltinfo' in output:
                 variants += "+termlib"
 
-            if 'FOR_SURE_MISSING' in output:
-                variants += "+variantdoesnotexist"
-
             output = Executable(exe)('--terminfo-dirs', output=str, error=str)
             usingSymlinks = False
             for termDir in output.split(':'):
