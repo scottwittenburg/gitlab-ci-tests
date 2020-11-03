@@ -10,9 +10,9 @@ pr_pipeline:
     project: scott/test-downstream
     strategy: depend
 
-merge_pipeline:
+master_pipeline:
   only:
-  - master
+  - /^github\/master$/
   variables:
     AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
     AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
