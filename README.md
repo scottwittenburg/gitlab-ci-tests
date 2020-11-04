@@ -15,5 +15,6 @@ Repository for simulating workflow for PR testing on gitlab:
 
 
 
-     Gitlab (test-downstream)               Gitlab (test-downstream)
-       direct_push pipeline                    direct_mr_pipeline
+     Gitlab (test-downstream)               Gitlab (test-downstream)   <- triggered by pushing
+       direct_push pipeline                    direct_mr_pipeline         directly to downstream
+                                                                          and/or creating MR
