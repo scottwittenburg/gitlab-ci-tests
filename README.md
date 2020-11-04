@@ -18,3 +18,6 @@ Repository for simulating workflow for PR testing on gitlab:
      Gitlab (test-downstream)               Gitlab (test-downstream)   <- triggered by pushing
        direct_push pipeline                    direct_mr_pipeline         directly to downstream
                                                                           and/or creating MR
+
+All secrets are stored in Gitlab (gitlab-ci-tests) and only exposed on protected
+branches, then they're propagate from the trigger jobs via variables.
