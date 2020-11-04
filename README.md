@@ -21,3 +21,7 @@ Repository for simulating workflow for PR testing on gitlab:
 
 All secrets are stored in Gitlab (gitlab-ci-tests) and only exposed on protected
 branches, then they're propagate from the trigger jobs via variables.
+
+Github (gitlab-ci-tests) has a custom package repository which is cloned and used
+to allow us to force full hashes to change in a controlled and predictable way,
+which lets us test whether the use of the per-PR mirrors is working as expected.
