@@ -41,6 +41,9 @@ to:
     branch: github/master
 ```
 
+According to gitlab, there's no way to know about the protected status of branches
+on the downstream project.
+
 Github (gitlab-ci-tests) has a custom package repository which is cloned and used
 to allow us to force full hashes to change in a controlled and predictable way,
 which lets us test whether the use of the per-PR mirrors is working as expected,
