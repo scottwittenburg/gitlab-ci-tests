@@ -1,6 +1,8 @@
 # gitlab-ci-tests
 
-Repository for simulating workflow for PR testing on gitlab:
+This repository for simulating workflow for PR testing on gitlab.  In the
+workflow diagram below, the `gitlab-ci-tests` repo is a stand-in for spack
+and the `test-downstream` repo is a stand-in for E4S.
 
                          Github (gitlab-ci-tests)
                                     |
